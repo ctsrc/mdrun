@@ -2,7 +2,17 @@
 
 [![Crates.io](https://img.shields.io/crates/v/mdrun.svg)](https://crates.io/crates/mdrun) [![Docs.rs](https://docs.rs/mdrun/badge.svg)](https://docs.rs/mdrun/)
 
-Markdown and CommonMark notebook shell command runner for up-to-date documentation of your sofware
+Runs command-line pipelines embedded in Markdown and CommonMark documents.
+
+Keeps the output of shell commands in your README.md
+and other documents up to date.
+
+Automatically rewrites the table of contents for your README.
+
+Usable as an alternative to IPython notebooks.
+
+Vaguely reminiscient of Knuth's computer programming system "Web"
+with its programs TANGLE and WEAVE, but at the same time not.
 
 ## Work in progress
 
