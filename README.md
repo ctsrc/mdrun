@@ -295,6 +295,109 @@ The secondary and non-recommended way of dealing with multiple sections
 that share the same name is to run `mdrun` recursively on a common ancestor,
 or on the nearest non-ambigous ancestor of each of the sections in question.
 
+### Running on multiple sections
+
+#### Some section
+
+```zsh
+ping -c4 1.1.1.1
+```
+
+```text
+
+```
+
+#### Another section
+
+```zsh
+ping -c4 8.8.8.8
+```
+
+```text
+
+```
+
+#### Now then
+
+Let's say that we want to run the commands for both of the above sections;
+"Some section" and "Another section". The way that we do this is simply by
+supplying the section argument multiple times; one for each section we want
+to execute the commands of and capturing the corresponding output for and
+so on:
+
+```zsh
+mdrun -s "Some section" -s "Another section" README.md
+```
+
+### Clearing all outputs
+
+Clearing all outputs is simple and sometimes a desirable thing to do:
+
+```zsh
+mdrun --clear-all-outputs README.md
+```
+
+If you then subsequently run `mdrun` again on all of the desired sections
+then you can easily spot if there are any sections that you have forgotten
+to cover.
+
+### Table of contents and depth
+
+If you only want to update the table of contents, and not run any commands,
+you can use the `--toc-only` flag:
+
+```zsh
+mdrun --toc-only README.md
+```
+
+By default table of contents is generated for level 2 and level 3 headings.
+This range can be adjusted by making use of the `--toc-depth-min <m>` and
+`--toc-depth-max <n>` arguments.
+
+For example:
+
+```zsh
+mdrun --toc-depth-min 1 --toc-depth-max 6 --toc-only README.md
+```
+
+### Verbosity
+
+By default, `mdrun` runs with a verbosity level of "info", which causes it
+to print out the commands that are currently being executed.
+
+You can reduce the verbosity level to "warn" which will only print warnings and errors
+by supplying the `--silent` flag once or its alias `-s` once.
+
+You can reduce the verbosity level to "errors" which will only print errors
+by supplying the `-s` flag twice; `-ss`.
+
+You can silence `mdrun` completely by supplying the `-s` flag thrice; `-sss`.
+In this mode nothing is printed by the tool, aside from panics that may be printed
+by the Rust runtime. This verbosity level -- or rather perhaps, quietness level --
+may be useful in certain scripting settings. The `mdrun` command will of course
+still exit with an appropiate exit status indicating whether it was able to
+successfully complete its tasks or not.
+
+### Synopsis (quick help) and version
+
+A synopsis of how to invoke `mdrun` is available by running the `mdrun` command
+with the `--help` flag or its alias `-h`:
+
+```zsh
+mdrun -h
+```
+
+```text
+
+```
+
+You can retrieve version information by running the `mdrun` command with
+the `--version` flag.
+
+```zsh
+mdrun --version
+```
+
 ## Installation
 
 ### Option 1: Via the package manager for your operating system
