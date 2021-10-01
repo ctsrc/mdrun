@@ -126,8 +126,8 @@ print("Hello from Python 3.")
 
 ```
 
-Although... Python may be considered to be in scope. So in that case we'll
-have to come up with another example instead.
+Although... Python may eventually be considered to be in scope. So in that case
+we'll have to come up with another example instead.
 
 This one may be a safer bet for something that will probably remain
 considered out of scope:
