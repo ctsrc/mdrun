@@ -181,7 +181,7 @@ context of sections of documents that you run `mdrun`. But even that will
 sometimes be appropriate. It all depends on what you are trying to do with
 `mdrun` and your Markdown or CommonMark documents.
 
-### A couple of other examples
+### Another example
 
 Likewise to the above, when you run:
 
@@ -189,11 +189,15 @@ Likewise to the above, when you run:
 mdrun -s Usage README.md
 ```
 
-you will find that the following are *NOT* updated, because they belong
+you will find that the following is *NOT* updated, because it belongs
 to a subsection of the "Usage" section rather than belonging directly
 to the "Usage" section itself:
 
 ```zsh
+echo $SHELL
+```
+
+```text
 
 ```
 
