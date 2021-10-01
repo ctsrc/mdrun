@@ -398,6 +398,10 @@ the `--version` flag.
 mdrun --version
 ```
 
+```text
+
+```
+
 ## Installation
 
 ### Option 1: Via the package manager for your operating system
