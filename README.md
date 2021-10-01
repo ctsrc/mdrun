@@ -181,7 +181,7 @@ context of sections of documents that you run `mdrun`. But even that will
 sometimes be appropriate. It all depends on what you are trying to do with
 `mdrun` and your Markdown or CommonMark documents.
 
-### Another example
+### Another couple of examples
 
 Likewise to the above, when you run:
 
@@ -195,6 +195,24 @@ to the "Usage" section itself:
 
 ```zsh
 echo $SHELL
+```
+
+```text
+
+```
+
+Whereas if we instead run:
+
+```zsh
+mdrun -s "Another couple of examples" README.md
+```
+
+then we will find that both the output for the preceeding `echo $SHELL`
+command and the following command will be executed, because now we are
+targeting this specific section.
+
+```zsh
+git describe --always --dirty=+
 ```
 
 ```text
