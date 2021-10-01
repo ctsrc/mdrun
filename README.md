@@ -2,7 +2,7 @@
 
 [![Crates.io](https://img.shields.io/crates/v/mdrun.svg)](https://crates.io/crates/mdrun) [![Docs.rs](https://docs.rs/mdrun/badge.svg)](https://docs.rs/mdrun/)
 
-Markdown notebook runner
+Markdown and CommonMark notebook shell command runner for up-to-date documentation of your sofware
 
 ## Work in progress
 
