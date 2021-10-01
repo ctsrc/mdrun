@@ -7,7 +7,7 @@ Runs command-line pipelines embedded in Markdown and CommonMark documents.
 Keeps the output of shell commands in your README.md
 and other documents up to date.
 
-Automatically rewrites the table of contents for your README.
+Automatically rewrites the table of contents for your README.md.
 
 Usable as an alternative to IPython notebooks.
 
