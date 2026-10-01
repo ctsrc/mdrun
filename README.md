@@ -7,8 +7,6 @@ Runs command-line pipelines embedded in Markdown and CommonMark documents.
 Keeps the output of shell commands in your README.md
 and other documents up to date.
 
-Automatically rewrites the table of contents for your README.md.
-
 Usable as an alternative to IPython notebooks.
 
 Vaguely reminiscient of Knuth's computer programming system "Web"
@@ -19,10 +17,6 @@ with its programs TANGLE and WEAVE, but at the same time not.
 This tool is not yet ready for use, as at present time
 no code for it has yet been written.
 
-## Table of contents
-
-Table of contents will be added as soon as `mdrun` is able to generate it.
-
 ## Introduction
 
 `mdrun` is a tool that reads Markdown and CommonMark documents and:
@@ -32,24 +26,15 @@ Table of contents will be added as soon as `mdrun` is able to generate it.
   - Inserts the output of the shell commands into the document.
   - Updates the output of the shell commands in the document.
 
-Additionally, it performs the following tasks:
-
-  - Generates a table of contents for your document.
-  - Updates the table of contents in your document.
-
 ## Dogfooding
 
-We wrote this tool to scratch an itch, and we use it ourselves.
+I wrote this tool to scratch an itch, and I use it myself.
 Both in other projects, and on the very README you are presently reading.
-
-(Also, when I say "we" I actually mean "I", because there is only me working
-on this as of yet. Contributions are welcome though, as long as they stick to
-the essence of the project. So perhaps one day it really will be "we".)
 
 ## Use cases
 
 The foremost usecase for `mdrun` lies in keeping documentation up to date,
-by capturing and updating the output of shell commands that your docmuents
+by capturing and updating the output of shell commands that your documents
 contain.
 
 Aside from this, one of many other possible use cases include using `mdrun`
@@ -350,25 +335,6 @@ mdrun --clear-all-outputs README.md
 If you then subsequently run `mdrun` again on all of the desired sections
 then you can easily spot if there are any sections that you have forgotten
 to cover.
-
-### Table of contents and depth
-
-If you only want to update the table of contents, and not run any commands,
-you can use the `--toc-only` flag:
-
-```zsh
-mdrun --toc-only README.md
-```
-
-By default table of contents is generated for level 2 and level 3 headings.
-This range can be adjusted by making use of the `--toc-depth-min <m>` and
-`--toc-depth-max <n>` arguments.
-
-For example:
-
-```zsh
-mdrun --toc-depth-min 1 --toc-depth-max 6 --toc-only README.md
-```
 
 ### Verbosity
 
