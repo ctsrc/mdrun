@@ -12,11 +12,6 @@ Usable as an alternative to IPython notebooks.
 Vaguely reminiscient of Knuth's computer programming system "Web"
 with its programs TANGLE and WEAVE, but at the same time not.
 
-## Work in progress
-
-This tool is not yet ready for use, as at present time
-no code for it has yet been written.
-
 ## Introduction
 
 `mdrun` is a tool that reads Markdown and CommonMark documents and:
