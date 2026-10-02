@@ -1,14 +1,14 @@
 [package]
 name = "mdrun"
+version = "0.1.0"
+edition = "2024"
 description = "Markdown notebook runner."
 license = "ISC"
 readme = "README.md"
 repository = "https://github.com/ctsrc/mdrun"
-version = "0.1.0"
 authors = ["Erik Nordstrøm <erik@nordstroem.no>"]
-edition = "2018"
 keywords = ["markdown", "commonmark"]
 
 [dependencies]
-clap = "2.33.3"
-comrak = "0.12.1"
+clap = "4.6.7"
+comrak = "0.55.0"
